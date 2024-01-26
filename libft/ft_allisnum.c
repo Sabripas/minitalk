@@ -1,20 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   minitalk.h                                         :+:      :+:    :+:   */
+/*   ft_allisnum.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ssteveli <ssteveli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/26 13:39:37 by ssteveli          #+#    #+#             */
-/*   Updated: 2024/01/26 13:39:38 by ssteveli         ###   ########.fr       */
+/*   Created: 2024/01/26 14:50:37 by ssteveli          #+#    #+#             */
+/*   Updated: 2024/01/26 14:53:05 by ssteveli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef MINITALK_H
-# define MINITALK_H
+#include "libft.h"
 
-# include "../libft/libft.h"
-# include <signal.h>
-# include <unistd.h>
+int	ft_allisnum(char *str)
+{
+	int	i;
 
-#endif
+	i = 0;
+	while (str[i])
+	{
+		if (ft_isdigit(str[i]) == 0)
+			return (1);
+		i++;
+	}
+	return (0);
+}

@@ -3,6 +3,7 @@ CC				=	gcc
 CFLAGS			=	-Wall -Wextra -Werror
 
 SRC			= ft_atoi.c \
+				ft_allisnum.c \
 				ft_bzero.c \
 				ft_calloc.c \
 				ft_check_same.c \
